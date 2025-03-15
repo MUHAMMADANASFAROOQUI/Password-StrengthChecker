@@ -5,6 +5,35 @@ import streamlit as st
 #page_styling
 st.set_page_config(page_title= "Password Strength Checker", page_icon="🔒")
 
+#custom CSS
+st.markdown(
+    """
+    <style>
+        .stButton>button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .stButton>button:hover {
+            background-color: #2980b9;
+            color: white 
+        }
+
+        
+        .stApp {
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            font-family: 'Segoe UI'
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 #Title and page description
 st.title("🔐 Password Strength Checker")
 st.subheader("Welcome! Test and Improve Your Password Strength!")
